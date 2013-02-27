@@ -401,7 +401,11 @@ class CfgBuildingLoot {
 			{"PartWoodPile","magazine"},
 			{"WeaponHolder_ItemHatchet","object"},
 			{"MR43","weapon"},
-			{"WeaponHolder_ItemMachete"}
+			{"WeaponHolder_ItemMachete"},
+			{"RH_p38","weapon"},
+			{"RH_ppk","weapon"},
+			{"RH_bull","weapon"},
+			{"RH_browninghp","weapon"}
 		};
 		itemChance[] =	{
 			0.06,
@@ -414,7 +418,11 @@ class CfgBuildingLoot {
 			0.11,
 			0.17,
 			0.06,
-			0.03
+			0.03,
+			0.07,
+			0.06,
+			0.04,
+			0.04
 		};
 	};
 	class Supermarket: Default {
@@ -435,6 +443,10 @@ class CfgBuildingLoot {
 			{"","generic"},
 			{"LeeEnfield","weapon"},
 			{"revolver_EP1","weapon"},
+			{"RH_p38","weapon"},
+			{"RH_ppk","weapon"},
+			{"RH_bull","weapon"},
+			{"RH_browninghp","weapon"},
 					
 			{"DZ_Assault_Pack_EP1","object"}, // 12
 			{"DZ_Czech_Vest_Puch","object"}, // 12-0
@@ -463,6 +475,10 @@ class CfgBuildingLoot {
 			0.05,
 			0.01,
 			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
 			0.05, //12
 			0.04, // 12-0
 			0.02, //16
@@ -486,15 +502,26 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		itemType[] =	{		
 			{"FN_FAL","weapon"},
-			{"bizon_silenced","weapon"},
-			{"M14_EP1","weapon"},
-			{"FN_FAL_ANPVS4","weapon"},
-			{"M107_DZ","weapon"},
-			{"BAF_AS50_scoped","weapon"},
 			{"Mk_48_DZ","weapon"},
 			{"M249_DZ","weapon"},
-			{"BAF_L85A2_RIS_SUSAT","weapon"},
-			{"DMR","weapon"},
+			{"R3F_PGM_Hecate_II_MILDOT","weapon"},
+			{"R3F_PGM_Hecate_II_MILDOT_DES","weapon"},
+			{"R3F_PGM_Hecate_II_POLY","weapon"},
+			{"R3F_FRF2_J8_DES","weapon"},
+			{"R3F_FRF2_J8_SD","weapon"},
+			{"R3F_FRF2_J8_SD_DES","weapon" },
+			{"R3F_Famas_F1_AIM","weapon"},
+			{"R3F_Famas_surb_EOT_SD","weapon"},
+			{"R3F_Famas_surb_AIM_SD","weapon"},
+			{"RH_deagleg","weapon"},
+			{"RH_p90","weapon"},
+			{"RH_p90sdeot","weapon"},
+			{"R3F_HK417M_AIM","weapon"},
+			{"R3F_HK417S_HG_SD","weapon"},
+			{"C1987_G3SG1","weapon"},
+			{"RH_krisssdRFX","weapon"},
+			{"RH_uspsd","weapon"},
+			{"MIDF_AUG_A1","weapon"},
 			{"","military"},
 			{"","medical"},
 			{"MedBox0","object"},
@@ -502,25 +529,30 @@ class CfgBuildingLoot {
 			{"AmmoBoxSmall_556","object"},
 			{"AmmoBoxSmall_762","object"},
 			{"Skin_Camo1_DZ","magazine"},
-			{"Skin_Sniper1_DZ","magazine"},
-			{"G36C","weapon"},
-			{"G36C_camo","weapon"},
-			//{"G36_C_SD_camo","weapon"},
-			{"G36A_camo","weapon"},
-			{"G36K_camo","weapon"},
-			{"100Rnd_762x54_PK","magazine"}
+			{"Skin_Sniper1_DZ","magazine"}
 		};
 		itemChance[] =	{
-			0.02,		//{"FN_FAL","weapon"},
-			0.05,		//{"bizon_silenced","weapon"},
-			0.05,		//{"M14_EP1","weapon"},
-			0.02,		//{"FN_FAL_ANPVS4","weapon"},
-			0.02,		//{"m107","weapon"},
-			0.01,		//{"BAF_AS50_scoped","weapon"},
+			0.05,		//{"FN_FAL","weapon"},
 			0.03,		//{"Mk_48_DZ","weapon"},
 			0.05,		//{"M249_DZ","weapon"},
-			0.01,		//{"BAF_L85A2_RIS_SUSAT","weapon"},
-			0.06,		//{"DMR","weapon"},
+			0.01,
+			0.01,
+			0.01,
+			0.03,
+			0.02,
+			0.01,
+			0.09,
+			0.05,
+			0.05,
+			0.03,
+			0.1,
+			0.09,
+			0.05,
+			0.05,
+			0.03,
+			0.06,
+			0.09,
+			0.07,
 			1,			//{"","military"},
 			0.5,		//{"","medical"},
 			0.1,		//{"MedBox0","object"},
@@ -528,13 +560,7 @@ class CfgBuildingLoot {
 			0.1,	//AmmoBoxSmall_556
 			0.1,	//AmmoBoxSmall_762
 			0.08,	//Skin_Camo1_DZ
-			0.05,	//Skin_Sniper1_DZ
-			0.03,	//G36C"
-			0.02,	//G36C_camo
-			//0.01,	//G36_C_SD_camo
-			0.02,	//G36A_camo
-			0.02,	//G36K_camo
-			0.01	//("100Rnd_762x54_PK","magazine"}
+			0.05	//Skin_Sniper1_DZ
 		};
 	};
 	class HeliCrash_No50s: Default {
@@ -545,13 +571,26 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		itemType[] =	{		
 			{"FN_FAL","weapon"},
-			{"bizon_silenced","weapon"},
-			{"M14_EP1","weapon"},
-			{"FN_FAL_ANPVS4","weapon"},
 			{"Mk_48_DZ","weapon"},
 			{"M249_DZ","weapon"},
-			{"BAF_L85A2_RIS_SUSAT","weapon"},
-			{"DMR","weapon"},
+			{"R3F_PGM_Hecate_II_MILDOT","weapon"},
+			{"R3F_PGM_Hecate_II_MILDOT_DES","weapon"},
+			{"R3F_PGM_Hecate_II_POLY","weapon"},
+			{"R3F_FRF2_J8_DES","weapon"},
+			{"R3F_FRF2_J8_SD","weapon"},
+			{"R3F_FRF2_J8_SD_DES","weapon"},
+			{"R3F_Famas_F1_AIM","weapon"},
+			{"R3F_Famas_surb_EOT_SD","weapon"},
+			{"R3F_Famas_surb_AIM_SD","weapon"},
+			{"RH_deagleg","weapon"},
+			{"RH_p90","weapon"},
+			{"RH_p90sdeot","weapon"},
+			{"R3F_HK417M_AIM","weapon"},
+			{"R3F_HK417S_HG_SD","weapon"},
+			{"C1987_G3SG1","weapon"},
+			{"RH_krisssdRFX","weapon"},
+			{"RH_uspsd","weapon"},
+			{"MIDF_AUG_A1","weapon"},
 			{"","military"},
 			{"","medical"},
 			{"MedBox0","object"},
@@ -559,23 +598,30 @@ class CfgBuildingLoot {
 			{"AmmoBoxSmall_556","object"},
 			{"AmmoBoxSmall_762","object"},
 			{"Skin_Camo1_DZ","magazine"},
-			{"Skin_Sniper1_DZ","magazine"},
-			{"G36C","weapon"},
-			{"G36C_camo","weapon"},
-			//{"G36_C_SD_camo","weapon"},
-			{"G36A_camo","weapon"},
-			{"G36K_camo","weapon"},
-			{"100Rnd_762x54_PK","magazine"}
+			{"Skin_Sniper1_DZ","magazine"}
 		};
 		itemChance[] =	{
-			0.02,		//{"FN_FAL","weapon"},
-			0.05,		//{"bizon_silenced","weapon"},
-			0.05,		//{"M14_EP1","weapon"},
-			0.02,		//{"FN_FAL_ANPVS4","weapon"},
+			0.05,		//{"FN_FAL","weapon"},
 			0.03,		//{"Mk_48_DZ","weapon"},
 			0.05,		//{"M249_DZ","weapon"},
-			0.01,		//{"BAF_L85A2_RIS_SUSAT","weapon"},
-			0.06,		//{"DMR","weapon"},
+			0.01,
+			0.01,
+			0.01,
+			0.03,
+			0.02,
+			0.01,
+			0.09,
+			0.05,
+			0.05,
+			0.03,
+			0.1,
+			0.09,
+			0.05,
+			0.05,
+			0.03,
+			0.06,
+			0.09,
+			0.07,
 			1,			//{"","military"},
 			0.5,		//{"","medical"},
 			0.1,		//{"MedBox0","object"},
@@ -583,13 +629,7 @@ class CfgBuildingLoot {
 			0.1,	//AmmoBoxSmall_556
 			0.1,	//AmmoBoxSmall_762
 			0.08,	//Skin_Camo1_DZ
-			0.05,	//Skin_Sniper1_DZ
-			0.03,	//G36C"
-			0.02,	//G36C_camo
-			//0.01,	//G36_C_SD_camo
-			0.02,	//G36A_camo
-			0.02,	//G36K_camo
-			0.01	//("100Rnd_762x54_PK","magazine"}
+			0.05	//Skin_Sniper1_DZ
 		};
 	};
 	class Hospital: Default {
@@ -619,7 +659,6 @@ class CfgBuildingLoot {
 		itemType[] =	{
 			{"M9","weapon"},
 			{"M16A2","weapon"},
-			{"M16A2GL","weapon"},
 			{"M9SD","weapon"},
 			{"AK_74","weapon"},
 			{"M4A1_Aim","weapon"},
@@ -627,8 +666,6 @@ class CfgBuildingLoot {
 			{"AKS_74_U","weapon"},
 			{"AK_47_M","weapon"},
 			{"M24","weapon"},
-			{"M1014","weapon"},
-			{"DMR","weapon"},
 			{"M4A1","weapon"},
 			{"M14_EP1","weapon"},
 			{"UZI_EP1","weapon"},
@@ -642,7 +679,26 @@ class CfgBuildingLoot {
 			{"ItemKnife","military"},
 			{"ItemGPS","weapon"},
 			{"ItemMap","military"},
-			
+			{"C1987_G3","weapon"},
+			{"C1987_G3_aimshot","weapon"},
+			{"R3F_Famas_F1","weapon"},
+			{"R3F_Famas_surb","weapon"},
+			{"RH_browninghp","weapon"},
+			{"RH_m1911sd","weapon"},
+			{"RH_uspm","weapon"},
+			{"RH_m93r","weapon"},
+			{"RH_muzi","weapon"},
+			{"RH_g18","weapon"},
+			{"RH_tec9","weapon"},
+			{"RH_bull","weapon"},
+			{"RH_ump","weapon"},
+			{"RH_umpRFX","weapon"},
+			{"RH_uzi","weapon"},
+			{"RH_mac10","weapon"},
+			{"RH_tmp","weapon"},
+			{"RH_tmpsd","weapon"},
+			{"RH_pp2000","weapon"},
+			{"RH_mp7","weapon"},
 			{"DZ_ALICE_Pack_EP1","object"}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
 			{"DZ_British_ACU","object"}, // 18
@@ -657,21 +713,17 @@ class CfgBuildingLoot {
 			{"ItemEtool","weapon"},
 			{"ItemSandbag","magazine"},
 			{"Sa58P_EP1","weapon"},
-			{"Sa58V_EP1","weapon"},
-			{"BAF_L85A2_RIS_Holo","weapon"}
+			{"Sa58V_EP1","weapon"}
 		};
 		itemChance[] =	{
 			0.05,
 			0.05,
-			0.01,
 			0.02,
 			0.15,
 			0.01,
 			0.08,
 			0.05,
 			0.05,
-			0.01,
-			0.10,
 			0.01,
 			0.02,
 			0.01,
@@ -686,6 +738,26 @@ class CfgBuildingLoot {
 			0.10,
 			0.01,
 			0.05,
+			0.01, //G3
+			0.01,
+			0.03,
+			0.03,
+			0.05,
+			0.04,
+			0.03,
+			0.03,
+			0.03,
+			0.03,
+			0.03,
+			0.03,
+			0.02,
+			0.01,
+			0.02,
+			0.02,
+			0.02,
+			0.01,
+			0.02,
+			0.02,
 			//Bags
 			0.08, //16
 			0.08, //16
@@ -699,8 +771,7 @@ class CfgBuildingLoot {
 			0.05,
 			0.02,
 			0.03,
-			0.03,
-			0.01
+			0.03
 		};
 	};
 	class MilitarySpecial: Default {
@@ -712,20 +783,16 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		itemType[] =	{
 			{"M16A2","weapon"},
-			{"M16A2GL","weapon"},
 			{"M249_DZ","weapon"},
 			{"M9SD","weapon"},
-			//{"M136","weapon"},
+			{"M136","weapon"},
 			{"AK_74","weapon"},
 			{"M4A1_Aim","weapon"},
 			{"AKS_74_kobra","weapon"},
 			{"AKS_74_U","weapon"},
 			{"AK_47_M","weapon"},
 			{"M24","weapon"},
-			{"SVD_CAMO","weapon"},
-			{"M1014","weapon"},
-			{"M107_DZ","weapon"},
-			{"DMR","weapon"},
+			{"SVD_des_EP1","weapon"},
 			{"M4A1","weapon"},
 			{"M14_EP1","weapon"},
 			{"UZI_EP1","weapon"},
@@ -737,11 +804,48 @@ class CfgBuildingLoot {
 			{"M4A1_HWS_GL_camo","weapon"},
 			{"Mk_48_DZ","weapon"},
 			{"M4A3_CCO_EP1","weapon"},
+			//Custom
+			{"C1987_G3","weapon"},
+			{"C1987_G3_aimshot","weapon"},
+			{"C1987_G3_acog","weapon"},
+			{"R3F_Famas_F1","weapon"},
+			{"R3F_Famas_F1_AIM","weapon"},
+			{"R3F_Famas_surb","weapon"},
+			{"R3F_Famas_surb_EOT_SD","weapon"},
+			{"R3F_Famas_surb_AIM_SD","weapon"},
+			{"R3F_HK417M_AIM","weapon"},
+			{"R3F_HK417S_HG_SD","weapon"},
+			{"R3F_FRF2_J8","weapon"},
+			{"R3F_FRF2_J8_DES","weapon"},
+			{"RH_deaglemz","weapon"},
+			{"RH_uspsd","weapon"},
+			{"RH_m1911sd","weapon"},
+			{"RH_uspm","weapon"},
+			{"RH_m93r","weapon"},
+			{"RH_muzi","weapon"},
+			{"RH_g18","weapon"},
+			{"RH_tec9","weapon"},
+			{"RH_ump","weapon"},
+			{"RH_umpRFX","weapon"},
+			{"RH_umpsd","weapon"},
+			{"RH_umpsdRFX","weapon"},
+			{"RH_kriss","weapon"},
+			{"RH_krissRFX","weapon"},
+			{"RH_krisssd","weapon"},
+			{"RH_uzi","weapon"},
+			{"RH_uzisd","weapon"},
+			{"RH_mac10","weapon"},
+			{"RH_tmpsd","weapon"},
+			{"RH_mp7eot","weapon"},
+			{"RH_mp7sd","weapon"},
+			{"RH_mp7sdaim","weapon"},
+			{"MIDF_AUG_A1","weapon"},
+			{"MIDF_AUG_HOLO","weapon"},
 			//Ammo
 			{"AmmoBoxSmall_556","object"},
 			{"AmmoBoxSmall_762","object"},
 
-			//{"NVGoggles","weapon"},
+			{"NVGoggles","weapon"},
 			{"Binocular","weapon"},
 			{"ItemFlashlightRed","military"},
 			{"ItemKnife","military"},
@@ -762,16 +866,15 @@ class CfgBuildingLoot {
 			{"PipeBomb","magazine"},
 			{"Sa58V_RCO_EP1","weapon"},
 			{"Sa58V_CCO_EP1","weapon"},
-			//{"G36_C_SD_camo","weapon"},
+			{"G36_C_SD_camo","weapon"},
 			{"M40A3","weapon"},
 			{"100Rnd_762x54_PK","magazine"}
 		};
 		itemChance[] =	{
 			0.10,
-			0.05,
 			0.01,
 			0.02,
-			//0.01, //m136
+			0.01, //m136
 			0.10,
 			0.02,
 			0.10,
@@ -779,9 +882,6 @@ class CfgBuildingLoot {
 			0.10,
 			0.01,
 			0.01,
-			0.20,
-			0.01,
-			0.02,
 			0.10,
 			0.03,
 			0.20,
@@ -793,9 +893,46 @@ class CfgBuildingLoot {
 			0.02,
 			0.01,
 			0.08,
+			//Custom
 			0.04,
+			0.03,
 			0.02,
-			//0.01, //NVGoggles
+			0.10,
+			0.07,
+			0.10,
+			0.04,
+			0.04,
+			0.04,
+			0.03,
+			0.01,
+			0.01,
+			0.02,
+			0.03,
+			0.04,
+			0.06,
+			0.06,
+			0.05,
+			0.05,
+			0.05,
+			0.12,
+			0.09,
+			0.07,
+			0.05,
+			0.10,
+			0.08,
+			0.05,
+			0.15,
+			0.07,
+			0.12,
+			0.06,
+			0.08,
+			0.04,
+			0.03,
+			0.03,
+			0.04,
+			0.04, //Ammo Box
+			0.02, //Ammo Box
+			0.01, //NVGoggles
 			0.10,
 			0.05,
 			0.15,
@@ -815,7 +952,7 @@ class CfgBuildingLoot {
 			0.01, //PipeBomb
 			0.01, //Sa58V_RCO_EP1
 			0.01, //Sa58V_CCO_EP1
-			//0.01, //{"G36_C_SD_camo","weapon"},
+			0.01, //{"G36_C_SD_camo","weapon"},
 			0.02, // M40A3
 			0.01	//("100Rnd_762x54_PK","magazine"}
 		};
