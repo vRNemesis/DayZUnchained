@@ -365,7 +365,7 @@ class CfgMagazines {
 	class 250Rnd_762x54_PKT_T90: FakeMagazine {};
 	class 500Rnd_TwinVickers: FakeMagazine {};
 	class 100Rnd_127x99_M2: FakeMagazine {};
-	class 250Rnd_127x99_M3P: FakeMagazine {};
+	//class 250Rnd_127x99_M3P: FakeMagazine {};
 	class 50Rnd_127x107_DSHKM: FakeMagazine {};
 	class 150Rnd_127x107_DSHKM: FakeMagazine {};
 	class 150Rnd_127x108_KORD: FakeMagazine {};
@@ -677,8 +677,8 @@ class CfgWeapons {
 	class PKT_veh: FakeWeapon {};
 	class DT_veh: FakeWeapon {};
 	class TwinVickers: FakeWeapon {};
-	class M2: FakeWeapon {};
-	class M3P: FakeWeapon {};
+	//class M2: FakeWeapon {};
+	//class M3P: FakeWeapon {};
 	//class DSHKM: FakeWeapon {};
 	class KORD: FakeWeapon {};
 	class KPVT: FakeWeapon {};
