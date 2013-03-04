@@ -1025,7 +1025,7 @@ class CfgBuildingLoot {
 		hangPos[] = {{-1.50537,5.34473,-5.08813},{0.494141,9.42725,-5.09016},{2.59473,-6.21191,-5.08055},{-1.74854,-2.39844,-1.14301}};
 	};
 	class Land_A_FuelStation_Build: Industrial {
-		lootChance = 0.5;
+		lootChance = 1;
 		zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2"};
 		lootPos[] = {{-1.31958,-0.655151,-1.57448},{1.82349,0.769653,-1.57458},{1.67871,-0.918701,-1.57458},{-1.23242,1.26794,-1.57458}};
 	};
@@ -1319,7 +1319,7 @@ class CfgBuildingLoot {
 		lootPos[] = {{-4.9248,0.795898,-1.34981},{0.29541,-0.552368,-1.33388},{6.14819,1.62915,-1.06708},{-3.52319,3.36365,0.768433},{-4.23145,0.80127,1.72308}};
 	};
 	class Land_A_FuelStation_Build_EP1: Industrial {
-		lootChance = 0.5;
+		lootChance = 1;
 		zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2"};
 		lootPos[] = {{-1.31958,-0.655151,-1.57448},{1.82349,0.769653,-1.57458},{1.67871,-0.918701,-1.57458},{-1.23242,1.26794,-1.57458}};
 	};
@@ -1461,6 +1461,10 @@ class CfgBuildingLoot {
 	class Land_Mil_hangar_EP1: Military {
 		lootPos[] = {{10.1245,-6.4873,-5.16317},{11.9387,7.91113,-5.16317},{1.79517,7.12695,-5.16317},{-11.8948,10.5449,-5.16317},{-8.97021,-4.34766,-5.16317},{-0.562744,-7.59375,-5.16317},{5.98804,-2.6123,-5.16317}};
 	};
+	class Land_Ind_Oil_Tower_EP1: Industrial {
+		maxRoaming = 5;
+		lootPos[] = {{3.55743,-5.9277301,-12.9755},{4.6308599,1.24902,-12.9932},{-0.240356,-1.08252,-12.9875},{6.8768902,-6.3496099,-8.0088902},{2.31177,0.23168901,-8.0047798}};
+	};
 //Takistan End
 	class Land_Shed_W03: HouseRoaming {}; // Qty: 206
 	class Land_HouseV_1I3: HouseRoaming {}; // Qty: 117
@@ -1493,7 +1497,6 @@ class CfgBuildingLoot {
 	class Land_Ind_Shed_01_end: HouseRoaming {}; // Qty: 266
 	class Land_Ind_Coltan_Main_EP1: HouseRoaming{}; // Takistan
 	class Land_Ind_FuelStation_Shed_EP1: HouseRoaming{}; // Takistan
-	class Land_Ind_Oil_Tower_EP1: HouseRoaming{}; // Takistan
 	class Land_A_statue01: HouseRoaming {
 		zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2","z_soldier","z_soldier_heavy","z_policeman"};
 		minRoaming = 2;
